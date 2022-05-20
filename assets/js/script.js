@@ -25,9 +25,9 @@ async function change(e) {
     result.innerHTML="";
     result.innerHTML += `
     <p>City<span id="city"> ${response.location.name}</span></p>
-    <p>Country<span id="country">${response.location.country}</span></p>
-    <p>Weather Forecast:<span id="forecast">${response.current.temp_c}</span></p>
-    <p>Sky Condition<span id="sky">  <img src="${response.current.condition.icon}" alt="">${response.current.condition.text}</span></p>
+    <p>Country<span id="country">: ${response.location.country}</span></p>
+    <p>Weather Forecast:<span id="forecast">: ${response.current.temp_c}</span></p>
+    <p>Sky Condition<span id="sky">  <img src="${response.current.condition.icon}" alt="">: ${response.current.condition.text}</span></p>
     `
 
 }
